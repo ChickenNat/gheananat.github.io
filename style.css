@@ -1,0 +1,415 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Dancing+Script:wght@700&family=Roboto&display=swap');
+
+:root{
+    --tittle-font : 'Bree Serif', serif;
+    --sign-font: 'Dancing Script', cursive;
+    --body-font: 'Roboto', sans-serif;
+    --black: #090909;
+    --dark-gray: #272626;
+    --light-gray:  #cccccc;
+    --peach: #db6551;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+    scroll-behavior: smooth;
+}
+p{
+    font-weight: 300;
+    color: #111;
+}
+.banner{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: left;
+    align-items: flex-end;
+    background: url(./img/bg.jpg) center;
+    background-size: cover;
+}
+.banner .content{
+    max-width: 700px;
+    text-align: left;
+}
+.banner .content h3{
+    font-family: var(--tittle-font);
+    font-size: 3.5em;
+    font-weight: 400;
+    color: #fff;
+}
+.banner .content h2{
+    font-family: var(--sign-font);
+    font-size: 5em;
+    font-weight: 500;
+    color: #fff;
+}
+.btn{
+    font-size: 1em;
+    font-weight: 800;
+    color: var(--dark-gray);
+    background: var(--peach);
+    display: inline-block;
+    padding: 10px 30px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+.btn:hover{
+    letter-spacing: 6px;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+/* Pake JS biar nempel & Item */
+header.sticky{
+    background: var(--light-gray);
+    padding: 10px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+}
+header .logo{
+    font-family: var(--tittle-font);
+    color: var(--peach);
+    font-weight: 900;
+    font-size: 2em;
+    text-decoration: none;
+}
+header.sticky .logo{
+    color: var(--peach);
+}
+header .logo span{
+    color: var(--second-color-font);
+}
+header .navbar{
+    position: relative;
+    display: flex;
+}
+header .navbar li{
+    list-style: none;
+    margin-left: 30px;
+}
+header .navbar li a {
+    font-family: var(--tittle-font);
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 500;
+}
+header .navbar li a:hover{
+    color: var(--peach);
+}
+header.sticky .navbar li a{
+    color: black;
+    font-weight: 800;
+}
+header.sticky .navbar li a:hover{
+    color: var(--peach);
+}
+
+/* About */
+section{
+    padding: 100px;
+}
+.about{
+    background-color: rgb(238, 232, 232);
+    min-height: 80vh;
+}
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.row .col50{
+    position: relative;
+    width: 48%;
+}
+.tittleText{
+    color: var(--peach);
+    font-size: 3em;
+    font-weight: 200;
+    font-family: var(--sign-font);
+    padding-bottom: 15px;
+}
+.tittleText span{
+    font-family: var(--ti);
+    color: var(--second-color-font);
+    font-weight: 500;
+    font-size: 1.5em;
+}
+.row .col50 .imgBx{
+    position: relative;
+    width: 100%;
+    min-height: 300px;
+}
+.row .col50 .imgBx img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.tittle{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/*porto*/
+.porto{
+    width: 100%;
+    display: block;
+    min-height: 100vh;
+    background-color: whitesmoke;
+    padding: 100px 0;
+}
+.porto .container{
+    max-width: 1170;
+    margin: auto;
+}
+.roww{
+    display: flex;
+    flex-wrap: wrap;
+}
+.porto img{
+    max-width: 100%;
+    vertical-align: middle;
+}
+/*porto gallery */
+.porto .content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.porto .porto-filter{
+    padding: 0 15px;
+	width: 100%;
+	text-align: center;
+	margin-bottom: 20px;
+}
+.porto .porto-filter .filter-item{
+    color: var(--black);
+	font-size: 18px;
+	text-transform: uppercase;
+	display: inline-block;
+	margin:0 10px;
+	cursor: pointer;
+	border-bottom: 2px solid transparent;
+	line-height: 1.2;
+	transition: all 0.3s ease;
+}
+.porto .porto-filter .filter-item.active{
+    color: var(--peach);
+    border-color: var(--peach);
+}
+.porto .porto-item{
+    width: calc(100% /4);
+    padding: 15px;
+}
+.porto .porto-item-inner img{
+    width: 100%;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.porto .porto-item-inner img:hover{
+    transform: scale(1.1);
+}
+.porto .porto-item.show{
+	animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.porto .porto-item.hide{
+	display: none;
+}
+
+
+
+
+
+
+/*contact*/
+.contact{
+   background: url(./img/bg3.jpg) center;
+   background-size: cover; 
+}
+.contactForm{
+    padding: 75px 50px;
+    background: #fff;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.5);
+    max-width: 500px;
+    margin-top: 50px;
+}
+.contactForm h3{
+    color: #111;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    font-weight: 500;
+}
+.contactForm .inputBox{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea{
+    width: 100%;
+    border: 1px solid #555;
+    padding: 10px;
+    color: #111;
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+.contactForm .inputBox input[type="submit"]{
+    font-size: 1em;
+    color: var(--black);
+    background: var(--peach);
+    display: inline-block;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0.5s;
+    max-width: 100px;
+    font-weight: 500;
+    border: none;
+    cursor:  pointer;
+}
+
+/*footer*/
+footer{
+    padding: 8px 40px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+    text-align: center;
+}
+footer p{
+    color: #111;
+}
+
+/*responsive*/
+@media (max-width: 991px)
+{
+    header,
+    header.sticky{
+        padding: 10px 20px;
+    }  
+    header .navbar{
+        display: none;
+    }    
+    header .navbar.active{
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+    }
+    header .navbar li {
+        margin-left: 0px;
+    }
+    header .navbar li a{
+        color: #111111;
+        font-size: 1.7em;
+    }
+    .menuToggle{
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(./img/menu.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    .menuToggle.active{
+        background: url(./img/close.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    header.sticky .menuToggle{
+        filter: invert(1);
+    }
+    section{
+        padding: 20px;
+    }
+    .banner .content h2{
+        font-size: 3em;
+        color: #fff;
+    } 
+    .row{
+        flex-direction: column;
+    }
+    .row .col50{
+        position: relative;
+        width: 100%;
+    }
+    .row .col50 .imgBx{
+        height: 300px;
+        margin-top: 20px;
+    }
+    .tittle{
+        text-align: center;
+    }
+    .tittleText{
+        font-size: 1.8em;
+        line-height: 1.5em;
+        margin-bottom: 15px;
+        font-weight: 300;
+    }
+    .porto .porto-item{
+        width: 50%;
+    }
+
+    .contactForm{
+        padding: 35px 40px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 767px){
+    .porto .porto-item{
+        width: 100%;
+    }
+    .porto .porto-filter .filter-item{
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 480px){
+    .banner .content h2{
+        font-size: 2.2em;
+        color: #fff;
+    }
+   
+}

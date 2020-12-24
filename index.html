@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--CSS-->
+    <link rel="stylesheet" href="./style.css">
+    <title>Gheana Nathasia</title>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">PORTFOLIO.<span>.</span></a>
+       <div class="menuToggle" onclick="toggleMenu();"></div>
+        <ul class="navbar">
+            <li><a href="#banner" onclick="toggleMenu();"> Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#porto" onclick="toggleMenu();">Porto</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="banner">
+        <div class="content">
+            <h3>My Name Is</h3>
+            <h2>Gheana Nathasia</h2>
+            <a href="#" class="btn">I'M A WEB DEVELOPER</a>
+        </div>               
+    </section>
+
+    <!--About-->
+    <section class="about" id="about">
+        <div class="row">
+            <div class="col50">
+                <div class="imgBx">
+                    <img src="./img/img1.jpg" alt="">
+                </div>
+            </div>
+            <div class="col50">
+                <h2 class="tittleText"><span>A</span>bout Me</h2>
+                <p>A web developer with a strong interest in projects that 
+                    require both conceptual and analytical thinking. I'm always 
+                    eager to learn from anyone and everyone.  regardless of the industry they're working in.
+                    <br><br>
+                    I am a flexible person seeking employment which will allow development, 
+                    growth and make use of my existing skills. am a good listener and learner, 
+                    and am able to communicate well with people from all walks of life.</p>
+            </div>
+        </div>
+    </section>
+    <!--End about-->
+
+    <!--porto-->
+    <section class="porto" id="porto">
+        <div class="container">
+            <div class="tittle">
+                <h2 class="tittleText"><span>Potrfolio</span></h2>
+           </div>
+            <div class="roww">
+                <div class="porto-filter">
+                    <span class="filter-item active" data-filter="all">All</span>
+                    <span class="filter-item" data-filter="js">JS</span>
+                    <span class="filter-item" data-filter="react">REACT</span>
+                    <span class="filter-item" data-filter="wordpress">WORDPRESS</span>
+                </div>
+            </div>
+            <div class="roww">
+                <!--porto start-->
+                <div class="porto-item js">
+                    <div class="porto-item-inner">
+                        <img src="./img/porto/1.png" alt="js">
+                        <p>ToDo List</p>
+                    </div>
+                </div>
+                <!--porto end-->
+                <!--porto start-->
+                <div class="porto-item js">
+                    <div class="porto-item-inner">
+                        <img src="./img/porto/2.png" alt="js">
+                        <p>Meditation app</p>
+                    </div>
+                </div>
+                <!--porto end-->
+                <!--porto start-->
+                <div class="porto-item js">
+                    <div class="porto-item-inner">
+                        <img src="./img/porto/3.png" alt="js">
+                        <p>Drump tab</p>
+                    </div>
+                </div>
+                <!--porto end-->
+                <!--porto start-->
+                <div class="porto-item js">
+                    <div class="porto-item-inner">
+                        <img src="./img/porto/4.png" alt="js">
+                        <p>Weather App API</p>
+                    </div>
+                </div>
+                <!--porto end-->
+                <!--porto start-->
+                <div class="porto-item js">
+                    <div class="porto-item-inner">
+                        <img src="./img/porto/5.png" alt="js">
+                        <p>Vanilla JS</p>
+                    </div>
+                </div>
+                <!--porto end-->
+                <!--porto start-->
+                <div class="porto-item react">
+                    <div class="porto-item-inner">
+                        <img src="./img/porto/6.png" alt="react">
+                        <p>Recipe App</p>
+                    </div>
+                </div>
+                <!--porto end-->
+                <!--porto start-->
+                <div class="porto-item react">
+                    <div class="porto-item-inner">
+                        <img src="./img/porto/7.png" alt="react">
+                        <p></p>
+                    </div>
+                </div>
+                <!--porto end-->
+                <!--porto start-->
+                <div class="porto-item wordpress">
+                    <div class="porto-item-inner">
+                        <img src="./img/porto/8.png" alt="wordpress">
+                        <p></p>
+                    </div>
+                </div>
+                <!--porto end-->  
+            </div>
+        </div>
+    </section>
+           
+    <!--End porto-->
+
+    <!--COntact-->
+    <section class="contact" id="contact">
+        <div class="tittle">
+            <h2 class="tittleText"><span>C</span>ontact Us</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, cum!</p>
+        </div>
+        <div class="contactForm">
+            <h3>Send Message?</h3>
+            <div class="inputBox">
+                <input type="text" placeholder="name">
+            </div>
+            <div class="inputBox">
+                <input type="text" placeholder="email">
+            </div>
+            <div class="inputBox">
+                <textarea placeholder="message"></textarea>
+            </div>
+            <div class="inputBox">
+                <input type="submit" value="send">
+            </div>
+        </div>
+    </section>
+    <!--End contact-->
+
+    <!--footer-->
+    <footer>
+        <p>Copyright 2077</p>
+    </footer>
+    <!--End footer-->
+
+    <!--JS-->
+    <script src="./main.js"></script>
+</body>
+</html>
