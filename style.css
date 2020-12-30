@@ -20,6 +20,7 @@
 p{
     font-weight: 300;
     color: #111;
+    font-size: 1.2em;
 }
 .banner{
     position: relative;
@@ -181,8 +182,10 @@ section{
     padding: 100px 0;
 }
 .porto .container{
+    display: inline-block;
     max-width: 1170;
     margin: auto;
+    transition: all 0.2s linear;
 }
 .roww{
     display: flex;
@@ -193,12 +196,13 @@ section{
     vertical-align: middle;
 }
 /*porto gallery */
-.porto .content{
+.porto{
     display: flex;
     justify-content: center;
     flex-direction: row-reverse;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: 0;
+    position: relative;
 }
 .porto .porto-filter{
     padding: 0 15px;
@@ -221,18 +225,44 @@ section{
     color: var(--peach);
     border-color: var(--peach);
 }
-.porto .porto-item{
-    width: calc(100% /4);
-    padding: 15px;
+.container .roww{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.porto .porto-item-inner img{
-    width: 100%;
+.porto .porto-item{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    height: auto;
+    
+    padding: 15px;
+    transition: all 0.2s linear;
+}
+.porto-item-inner{
+    text-align: center;
     cursor: pointer;
+    padding: 10px;
+}
+.porto-item-inner img{
+    width: 100%;
+    display: block;
+    object-position: top;
+    object-fit: cover;
+}
+.porto-item-inner h4{
+    font-size: 1.2rem;
+    font-weight: 800px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 50px;
+}
+.porto-item-inner:hover{
+    background: var(--peach);
+    transform: scale(1.1);
     transition: 0.5s;
 }
-.porto .porto-item-inner img:hover{
-    transform: scale(1.1);
-}
+
 .porto .porto-item.show{
 	animation: fadeIn 0.5s ease;
 }
@@ -318,7 +348,7 @@ footer p{
 {
     header,
     header.sticky{
-        padding: 10px 20px;
+        padding: 13px 20px;
     }  
     header .navbar{
         display: none;
@@ -387,6 +417,8 @@ footer p{
         line-height: 1.5em;
         margin-bottom: 15px;
         font-weight: 300;
+        text-align: center;
+        margin-top: 20px;
     }
     .porto .porto-item{
         width: 50%;
