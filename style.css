@@ -20,7 +20,7 @@
 p{
     font-weight: 300;
     color: #111;
-    font-size: 1.2em;
+    font-size: 1em;
 }
 .banner{
     position: relative;
@@ -38,18 +38,18 @@ p{
 }
 .banner .content h3{
     font-family: var(--tittle-font);
-    font-size: 3.5em;
+    font-size: 3em;
     font-weight: 400;
     color: #fff;
 }
 .banner .content h2{
     font-family: var(--sign-font);
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 500;
     color: #fff;
 }
 .btn{
-    font-size: 1em;
+    font-size: 0.8em;
     font-weight: 800;
     color: var(--dark-gray);
     background: var(--peach);
@@ -86,7 +86,7 @@ header .logo{
     font-family: var(--tittle-font);
     color: var(--peach);
     font-weight: 900;
-    font-size: 2em;
+    font-size: 1.8em;
     text-decoration: none;
 }
 header.sticky .logo{
@@ -107,7 +107,7 @@ header .navbar li a {
     font-family: var(--tittle-font);
     text-decoration: none;
     color: #fff;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 500;
 }
 header .navbar li a:hover{
@@ -141,7 +141,7 @@ section{
 }
 .tittleText{
     color: var(--peach);
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 200;
     font-family: var(--sign-font);
     padding-bottom: 15px;
@@ -251,7 +251,7 @@ section{
     object-fit: cover;
 }
 .porto-item-inner h4{
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: 800px;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -335,13 +335,14 @@ section{
 
 /*footer*/
 footer{
-    padding: 8px 40px;
+    padding: 5px 30px;
     border-top: 1px solid rgba(0,0,0,0.1);
     text-align: center;
 }
 footer p{
     color: #111;
 }
+
 
 /*responsive*/
 @media (max-width: 991px)
@@ -396,7 +397,7 @@ footer p{
     }
     .banner .content h2{
         font-size: 3em;
-        color: #fff;
+        color: rgb(151, 74, 74);
     } 
     .row{
         flex-direction: column;
