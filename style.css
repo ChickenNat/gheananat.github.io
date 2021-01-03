@@ -95,6 +95,37 @@ header.sticky .logo{
 header .logo span{
     color: var(--second-color-font);
 }
+.logo, 
+.banner h2{
+    animation: kiri 1s;
+    -webkit-animation: kiri 1.5s;
+}
+@keyframes kiri{
+    from {
+        margin-left: 100%;
+        opacity: 0;
+      }
+    
+      to {
+        margin-left: 0%;
+        opacity: 1;
+      }
+}
+.banner h3, 
+.btn{
+    animation: kanan 1s;
+    -webkit-animation: kanan 1.5s;
+}
+@keyframes kanan{
+    from {
+        opacity: 0;
+      }
+    
+      to {
+        opacity: 1;
+      }
+}
+
 header .navbar{
     position: relative;
     display: flex;
@@ -397,7 +428,7 @@ footer p{
     }
     .banner .content h2{
         font-size: 3em;
-        color: rgb(151, 74, 74);
+        color:white;
     } 
     .row{
         flex-direction: column;
